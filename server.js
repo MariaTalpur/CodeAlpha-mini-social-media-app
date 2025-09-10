@@ -1,5 +1,7 @@
 const express = require('express');
 const path = require('path');
+const cors = require("cors");
+app.use(cors());
 const app = express();
 const PORT = 3000;
 
@@ -78,3 +80,4 @@ app.post('/register', (req, res) => {
 
 //  Only ONE listen (5000 hata diya, 3000 final)
 app.listen(PORT, () => console.log(`Server running at http://localhost:${PORT}`));
+
