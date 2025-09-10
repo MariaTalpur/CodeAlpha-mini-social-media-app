@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Twitter Feed</title>
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+  <header>
+    <h1>Mini Social Media App</h1>
+    <div>
+      <span id="profileName">Guest</span>
+      <button id="logoutBtn">Logout</button>
+    </div>
+  </header>
+
+  <div class="container">
+    <!-- Left Sidebar -->
+    <aside class="sidebar-left">
+      <div class="profile-section">
+        <img
+          src="https://static.vecteezy.com/system/resources/previews/049/234/955/non_2x/night-clouds-reflecting-over-a-tranquil-lake-at-sunset-photo.jpeg"
+          alt="User">
+        <h4>Maria</h4>
+      </div>
+      <div class="profile-item">
+        <div class="menu-item"> <img src="images/home.png" alt="Image" style="width:30px; height:30px;">
+          Home
+        </div>
+        <div class="menu-item"> <img src="images/notification.png" alt="Image" style="width:30px; height:30px;">
+          Notifications
+        </div>
+        <div class="menu-item"> <img src="images/message.png" alt="Image" style="width:30px; height:30px;">
+          Messages
+        </div>
+        <div class="menu-item"> <img src="images/profile.png" alt="Image" style="width:30px; height:30px;">
+          Profile
+        </div>
+        <div class="menu-item"> <img src="images/setting.png" alt="Image" style="width: 30px; height:30px;">
+          Settings
+        </div>
+      </div>
+
+      <section class="new-post">
+        <h3>Create New Post</h3>
+        <input type="text" id="newComment" placeholder="Write something..." required>
+        <input type="text" id="newImage" placeholder="Image URL (optional)">
+        <div id="imagePreviewContainer">
+          <img id="imagePreview" src="" alt="Preview"
+            style="display:none; border-radius:10px; max-width:100%; margin-top:10px;">
+        </div>
+        <button id="postBtn">Post</button>
+      </section>
+    </aside>
+
+    <!-- Main Feed -->
+    <main id="feed">
+      <!-- Posts injected by JS -->
+    </main>
+
+    <!-- Right Sidebar -->
+    <aside class="sidebar-right">
+      <input type="text" placeholder="Search Now">
+      <h4>Suggestions</h4>
+      <div class="suggestion-item">
+        <div class="sitem">
+          <img class="profile"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVNN58XFDLxdqtwwWRSE924NjtuSryXFGxjg&s"
+            alt="Profile">
+          <div>
+            <div class="name">Ayesha</div>
+            <div class="email">ayesha@email.com</div>
+          </div>
+        </div>
+        <!-- <img class="post" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVNN58XFDLxdqtwwWRSE924NjtuSryXFGxjg&s" alt="Post"> -->
+      </div>
+
+      <div class="suggestion-item">
+        <div class="sitem">
+          <img class="profile"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR01iIIKHc5FLioR2D8Voo5YM6Bpdxqqa4cZQ&s"
+            alt="Profile">
+          <div>
+            <div class="name">Sara Malik</div>
+            <div class="email">sara@email.com</div>
+          </div>
+        </div>
+        <!-- <img class="post" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR01iIIKHc5FLioR2D8Voo5YM6Bpdxqqa4cZQ&s" alt="Post"> -->
+      </div>
+
+      <div class="suggestion-item">
+        <div class="sitem">
+          <img class="profile"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVNN58XFDLxdqtwwWRSE924NjtuSryXFGxjg&s"
+            alt="Profile">
+          <div>
+            <div class="name">Hassan Raza</div>
+            <div class="email">hassan@email.com</div>
+          </div>
+        </div>
+        <!-- <img class="post" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVNN58XFDLxdqtwwWRSE924NjtuSryXFGxjg&s" alt="Post"> -->
+
+
+      </div>
+      <div class="suggestion-item">
+        <div class="sitem">
+          <img class="profile"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVNN58XFDLxdqtwwWRSE924NjtuSryXFGxjg&s"
+            alt="Profile">
+          <div>
+            <div class="name">Hassan Raza</div>
+            <div class="email">hassan@email.com</div>
+          </div>
+        </div>
+        <!-- <img class="post" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVNN58XFDLxdqtwwWRSE924NjtuSryXFGxjg&s" alt="Post"> -->
+
+
+      </div>
+      <div class="suggestion-item">
+        <div class="sitem">
+          <img class="profile"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVNN58XFDLxdqtwwWRSE924NjtuSryXFGxjg&s"
+            alt="Profile">
+          <div>
+            <div class="name">Hassan Raza</div>
+            <div class="email">hassan@email.com</div>
+          </div>
+        </div>
+        <!-- <img class="post" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVNN58XFDLxdqtwwWRSE924NjtuSryXFGxjg&s" alt="Post"> -->
+
+
+      </div>
+      <div class="suggestion-item">
+        <div class="sitem">
+          <img class="profile"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVNN58XFDLxdqtwwWRSE924NjtuSryXFGxjg&s"
+            alt="Profile">
+          <div>
+            <div class="name">Hassan Raza</div>
+            <div class="email">hassan@email.com</div>
+          </div>
+        </div>
+        <!-- <img class="post" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVNN58XFDLxdqtwwWRSE924NjtuSryXFGxjg&s" alt="Post"> -->
+
+
+      </div>
+      <div class="suggestion-item">
+        <div class="sitem">
+          <img class="profile"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVNN58XFDLxdqtwwWRSE924NjtuSryXFGxjg&s"
+            alt="Profile">
+          <div>
+            <div class="name">Hassan Raza</div>
+            <div class="email">hassan@email.com</div>
+          </div>
+        </div>
+        <!-- <img class="post" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVNN58XFDLxdqtwwWRSE924NjtuSryXFGxjg&s" alt="Post"> -->
+
+
+      </div>
+
+      <!-- See More Button -->
+      <div class="see-more-container">
+        <button id="seeMoreBtn">See more ▾</button>
+      </div>
+      <div class="footer">
+        <span class="footer-item">Terms of Service |</span>
+        <span class="footer-item">Privacy Policy |</span>
+        <span class="footer-item">Cookie Policy |</span>
+        <span class="footer-item">Accessibility |</span>
+        <span class="footer-item">Ads info |</span>
+        <span class="footer-item">More</span>
+        <span class="footer-item">© 2025 X Corp.</span>
+      </div>
+    </aside>
+
+
+    </aside>
+
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
